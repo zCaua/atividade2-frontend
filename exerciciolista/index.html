@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas | CM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>LISTA DE TAREFAS | CM</h1>
+
+    <div class="input-area">
+      <input type="text" id="inputTarefa" placeholder="Digite a sua tarefa" />
+
+      <div class="botoes-principais">
+        <button type="button" onclick="adicionarTarefa()" title="Adicionar tarefa" aria-label="Adicionar tarefa">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16" aria-hidden="true">
+            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+          <label for="file" class="botao-imagem" title="Adicionar imagem" aria-label="Adicionar imagem">
+          Enviar Imagem
+          <input type="file" id="file" accept="image/*" hidden />
+        </label>
+
+    <div id="mensagem"></div>
+    <ul id="listaTarefas"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
